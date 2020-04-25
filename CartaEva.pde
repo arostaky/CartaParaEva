@@ -1,14 +1,10 @@
 /**
  ***Carta a mi amiga y artista Eva ***
  */
-
-
 import processing.pdf.*;
 
 size(600, 1600);
-
 beginRecord(PDF, "CartaParaEva.pdf"); 
-
 background(255);
 stroke(0, 20);
 strokeWeight(20.0);
@@ -56,7 +52,7 @@ String[] a = {"Querida Eva,",
 "Este procedimiento no las convierte en obras de arte inmediatamente,",
 "pero sí puede llegar a convertirlas el escribir, hablar o darle una intención.", 
 "Al final el proceso de “creación” o “materialización” de ideas es un trabajo", 
-"y cuando trabajamos naturalmente es porque deseamos ver un resultado.",
+"y cuando trabajamos nos parece natural desear ver un resultado.",
 "Luego viene la parte más difícil (para algunas personas) que es:", 
 "mostrar esta idea convertida en un trabajo u obra gracias a este procedimiento que realizamos para materializarla.",
 "Y a partir de esta “muestra” aparecen los “ojos y oídos” que evalúan y le “dan” valor con sus aplausos,", 
@@ -72,8 +68,6 @@ String[] a = {"Querida Eva,",
 textSize(16);
 fill(20);
 for (int i = 0; i< a.length; i++){
-    text(a[i], 10, 10 + i*50, 500, 590);
+    text(a[i], 30, 100 + i*50, 500, 620);
   }
-
-//text(a[0], 10, 10, 500, 500);  // Text wraps within text box
 endRecord();
